@@ -7,7 +7,7 @@ export ZSH=/Users/smorton/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="theunraveler"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, brew, z)
+plugins=(git brew z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,11 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Make it easier to get to the github shell.
-alias gitpath='cd ~/code/git'
-
 # Make it easier to reset the shell.
 alias rs="source ~/.zshrc"
+
+# ==================  Local Stuff ===================
+
+# Make it easier to get to the github shell.
+alias gitpath='cd ~/code/git'
 
 # added by Anaconda2 4.4.0 installer
 # export PATH="/Users/smorton/anaconda/bin:$PATH"  # commented out by conda initialize
