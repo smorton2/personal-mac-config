@@ -105,9 +105,9 @@ alias jupyter_notebook='source activate py36; jupyter notebook'
 
 # Easily connect to a remote Jupyter server
 function jupyter_ssh = {
-echo "Please enter DNS address:"
-read dns_address
-open http://$dns_address:8888/
+    echo "Please enter DNS address:"
+    read dns_address
+    open http://$dns_address:8888/
 }
 
 # >>> conda initialize >>>
