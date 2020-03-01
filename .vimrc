@@ -16,3 +16,12 @@ au Filetype python set tabstop=8 softtabstop=0 expandtab shiftwidth=4 autoindent
 
 " SQL file formatting: tab inserts 2 spaces, autoindent
 au Filetype sql set tabstop=4 softtabstop=0 expandtab shiftwidth=2 autoindent smarttab
+
+" Make it easier to leave insert mode
+inoremap jk <ESC>
+
+" Use space as leader key
+let mapleader = " "
+
+" Map system keyboard to Vim's paste buffer
+set clipboard=unnamedplus
