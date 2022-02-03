@@ -24,4 +24,4 @@ inoremap jk <ESC>
 let mapleader = " "
 
 " Map system keyboard to Vim's paste buffer
-set clipboard=unnamedplus
+set clipboard=unnamed
