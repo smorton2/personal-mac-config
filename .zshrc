@@ -70,6 +70,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+echo "loading plugins"
 plugins=(git brew z tmux poetry)
 
 source $ZSH/oh-my-zsh.sh
@@ -114,7 +115,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # Easier terminal nav
 alias zshrc="vim ~/.zshrc"
-alias rs="source ~/.zshrc && echo 'zsh reloaded'"
+alias rst="source ~/.zshrc && echo 'zsh reloaded'"
 
 # Make it easier to find commands in command line history
 alias forgot="history | grep"
