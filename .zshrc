@@ -71,7 +71,10 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 echo "loading plugins"
-plugins=(git brew z tmux poetry)
+plugins=(git brew z tmux poetry terraform)
+
+# Other git aliases to make life easier.
+alias gbp="git branch | grep -v 'main' | xargs git branch -d"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,6 +118,8 @@ eval "$(pyenv virtualenv-init -)"
 
 # Easier terminal nav
 alias zshrc="vim ~/.zshrc"
+alias localrc="vim ~/.localrc"
+alias localenv="vim ~/.localenv"
 alias rst="source ~/.zshrc && echo 'zsh reloaded'"
 
 # Make it easier to find commands in command line history
