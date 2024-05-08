@@ -130,9 +130,5 @@ alias forgot="history | grep"
 # Load local setup
 . ~/.localrc
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/stephenmorton/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 # Clean Poetry bc it sucks sometimes
 alias poetry_clean="poetry lock --no-cache && poetry install --sync"
