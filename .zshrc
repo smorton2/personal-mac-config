@@ -71,7 +71,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 echo "loading plugins"
-plugins=(git brew z tmux poetry terraform)
+plugins=(git brew z tmux poetry terraform dotenv)
 
 # Other git aliases to make life easier.
 alias gbp="git branch | grep -v 'main' | xargs git branch -d"
@@ -107,10 +107,12 @@ source $ZSH/oh-my-zsh.sh
 # ================ Setup Tools ================
 
 # Make poetry work
-export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 fpath+=~/.zfunc
 
 # Pyenv Setup
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -127,3 +129,10 @@ alias forgot="history | grep"
 
 # Load local setup
 . ~/.localrc
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/stephenmorton/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Clean Poetry bc it sucks sometimes
+alias poetry_clean="poetry lock --no-cache && poetry install --sync"
