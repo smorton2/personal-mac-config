@@ -23,7 +23,10 @@ This repo contains dotfiles, configuration, and setup instructions for my dev en
 
 ### Configure Python
 
+- [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#homebrew-in-macos)
+  - Confirm environment variables in `.zshrc`
 - poetry
   - `brew install poetry`
   - Enable completions for oh-my-zsh ([link](https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh))
-- [pyenv](https://github.com/pyenv/pyenv#basic-github-checkout) and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) for non-poetry environments
+  - Confirm environment variables in `.zshrc`
+- [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv?tab=readme-ov-file#installing-with-homebrew-for-macos-users) for non-poetry environments
