@@ -109,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # Make poetry work
 export PATH="$HOME/.local/bin:$PATH"
 fpath+=~/.zfunc
+alias poetry_shell="source .venv/bin/activate"
+
 
 # Pyenv Setup
 export PYENV_ROOT="$HOME/.pyenv"
@@ -132,3 +134,12 @@ alias forgot="history | grep"
 
 # Clean Poetry bc it sucks sometimes
 alias poetry_clean="poetry lock --no-cache && poetry install --sync"
+
+# Clean parcel cache in yarn
+alias parcel_clean="rm -rf .parcel-cache"
+
+# Activate virtual environment
+alias env_activate="source .venv/bin/activate"
+
+# uv completions
+eval "$(uv generate-shell-completion zsh)"
