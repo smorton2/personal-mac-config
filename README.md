@@ -17,9 +17,12 @@ This repo contains dotfiles, configuration, and setup instructions for my dev en
       - confirm installation.
 - tmux
   - `brew install tmux`
-- [VSCode](https://code.visualstudio.com/docs/setup/mac)
-  - Sign with github and enable settings sync
-  - Enable the `code` terminal command ([link](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
+- IDE
+  - [VSCode](https://code.visualstudio.com/docs/setup/mac)
+  - Sign with github and enable settings sync (choose the remote configuration)
+  - [Cursor](https://www.cursor.com/docs/getting-started/installation/macos)
+    - enable the `code` terminal command
+    - [Import settings from VSCode](https://docs.cursor.com/en/guides/migration/vscode)
 
 ### Configure Python
 
