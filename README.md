@@ -36,4 +36,5 @@ This repo contains dotfiles, configuration, and setup instructions for my dev en
   - `brew install poetry`
   - Enable completions for oh-my-zsh ([link](https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh))
   - Confirm environment variables in `.zshrc`
+  - Configure virtualenvs to be created in the project `poetry config virtualenvs.in-project true`
 - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv?tab=readme-ov-file#installing-with-homebrew-for-macos-users) for non-poetry environments
