@@ -23,6 +23,10 @@ This repo contains dotfiles, configuration, and setup instructions for my dev en
   - [Cursor](https://www.cursor.com/docs/getting-started/installation/macos)
     - enable the `code` terminal command
     - [Import settings from VSCode](https://docs.cursor.com/en/guides/migration/vscode)
+- git
+  - `git config --global user.name "Stephen Morton"`
+  - `git config --global user.email "<< work email or personal email works here >>"`
+  - `git config --global pull.rebase false`
 
 ### Configure Python
 
