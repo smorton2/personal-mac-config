@@ -139,7 +139,15 @@ alias poetry_clean="poetry lock --no-cache && poetry install --sync"
 alias parcel_clean="rm -rf .parcel-cache"
 
 # Activate virtual environment
-alias env_activate="source .venv/bin/activate"
+alias env_="poetry_shell && source .env"
 
 # uv completions
 eval "$(uv generate-shell-completion zsh)"
+
+# nvm setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Quickly open claude code environment
+alias claude_="cd ~/repos && ./tmux-claude.sh"
