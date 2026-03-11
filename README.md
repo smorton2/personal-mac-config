@@ -27,6 +27,16 @@ This repo contains dotfiles, configuration, and setup instructions for my dev en
   - `git config --global user.name "Stephen Morton"`
   - `git config --global user.email "<< work email or personal email works here >>"`
   - `git config --global pull.rebase false`
+  - Install pre-commit https://pre-commit.com/
+  - Add the following to .pre-commit-config.yaml in each repo you work in to prevent merges to main
+```
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: no-commit-to-branch
+        args: ['--branch', 'main']
+```
 
 ### Configure Python
 
